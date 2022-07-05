@@ -12,7 +12,7 @@ const routes: Routes = [
       {
         path: 'first',
         component: FirstChildComponent,
-        canActivate: [AutoLoginAllRoutesGuard],
+        canActivate: [],
       },
       {
         path: 'second',
