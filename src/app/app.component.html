@@ -1,0 +1,23 @@
+<div *ngIf="isAuthenticated$ | async as isauth; else noAuth">
+  <button (click)="logout()">logout</button>
+
+  Is authenticated: {{ isauth }}
+</div>
+
+<ng-template #noAuth>
+  <button (click)="login()">login</button>
+  <hr />
+</ng-template>
+
+<nav>
+  <a [routerLink]="['/first']" routerLinkActive="router-link-active"
+    >First child</a
+  >
+  <a [routerLink]="['/second']" routerLinkActive="router-link-active"
+    >First child</a
+  >
+</nav>
+
+<div>
+  <router-outlet></router-outlet>
+</div>
