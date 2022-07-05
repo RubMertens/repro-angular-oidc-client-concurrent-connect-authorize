@@ -1,5 +1,7 @@
 # Repro steps
 
+Run the angular app using `npm start`
+
 open the developer console to see when the idtoken (or accessstoken) is about to renew.
 
 _Just_ when that is happening start navigating between first and second child component. Because both are guarded by the `AutoLoginAllRoutesGuard` they will trigger a normal `authorize`.
