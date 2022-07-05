@@ -70,4 +70,4 @@ Angular 14.0.4 with angular-auth-oidc-client 14.1.0
 }
 ```
 
-### tracked here
+### tracked here https://github.com/damienbod/angular-auth-oidc-client/issues/1479
